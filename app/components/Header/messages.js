@@ -14,4 +14,8 @@ export default defineMessages({
     id: 'boilerplate.components.Header.features',
     defaultMessage: 'Features',
   },
+	hydra: {
+		id: 'boilerplate.components.Header.hydra',
+		defaultMessage: 'Hydra',
+	},
 });

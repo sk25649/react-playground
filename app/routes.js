@@ -47,6 +47,14 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
+			path: '/hydra',
+			name: '/hydra',
+			getComponent(nextState, cb) {
+				import('containers/HydraGamePage')
+				.then(loadModule(cb))
+				.catch(errorLoading);
+			},
+		}, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
